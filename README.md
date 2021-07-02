@@ -14,3 +14,8 @@
     hint: 'git pull ...') before pushing again.
     hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 -   程序员 B 必须首先手动解决冲突，而后再走一遍：add-commit-push 才能推送成功
+
+## 区分远程仓库的 https 和 SSH 的地址
+
+-   SSH 方式，不需要频繁切换账号，每一个账号对应一套公钥和私钥（公钥和私钥文件均存放于/.ssh 下），在/.ssh 文件下设置有私钥文件 id_rsa,在 github 账号上添加了 SSH Key(字符串从 id_rsa.pub 公钥文件中获取)
+-   HTTPS方式，多账号时，需要切换(win10 系统凭证管理器中会记忆存储一些账号，切换账号时，需要删除)
